@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* CSS Document */
+body, div, p, h1, h2, h3, h4, ul, li, dl, dt, dd, ol, form, table, tr, td, span, label, input, select, option, a, img, i, em, strong, b {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    border: 0 none;
+    vertical-align: top;
+}
+
+a {
+    text-decoration: none;
+}
+body {
+    font-family: "微软雅黑";
+    color: #000000;
+    margin: 0 auto;
+    font-size: 20px;
+    background-color: #cd7a52;
+    position: relative;
+    padding-top:50px;
+}
+
+.clearfix {*zoom: 1;}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.chessman{position: absolute;top:50px;left: 50%;margin-left:-650px;}
+.current{position: absolute;font-size: 30px;line-height: 30px;top:0;left:0;font-style: normal;}
+.black,.white{display:block;width:30px;height:30px;border-radius:50%;position: absolute;left:50px;top:0;box-shadow: 2px 2px 8px #000;}
+.black{
+    background: -webkit-radial-gradient(#999, #222, #000); /* Safari 5.1 - 6.0 */
+    background: -o-radial-gradient(#999, #222, #000); /* Opera 11.6 - 12.0 */
+    background: -moz-radial-gradient(#999, #222, #000); /* Firefox 3.6 - 15 */
+    background: radial-gradient(#999, #222, #000); /* 标准的语法 */
+}
+.white{
+    top:80px;
+    background: -webkit-radial-gradient(#ccc, #eee, #fff); /* Safari 5.1 - 6.0 */
+    background: -o-radial-gradient(#ccc, #eee, #fff); /* Opera 11.6 - 12.0 */
+    background: -moz-radial-gradient(#ccc, #eee, #fff); /* Firefox 3.6 - 15 */
+    background: radial-gradient(#ccc, #eee, #fff); /* 标准的语法 */
+}
+.start{width:80px;left:10px;border-radius: 5px;font-size:16px;font-style: normal;background-color: #000;font-weight: 600;cursor: pointer;position: absolute;top:180px;left:10px;line-height: 30px;color: #fff;text-align: center;font-size: 16px;}
+
+#chessBox{width:1000px;margin: 0 auto;position: relative;}
+#chessBox li{float: left;width:37px;margin-left: -3px;margin-bottom: -3px;border: 3px double #000;height:37px;}
